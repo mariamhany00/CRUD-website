@@ -1,0 +1,43 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+}
+
+.container {
+    margin: 50px auto;
+}
+
+.form-group {
+    margin-bottom: 60pxx;
+}
+
+label {
+    font-weight: bold;
+    margin: 10px;
+}
+
+.form-control {
+    width: 100%;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    text-align: center;
+}
+
+.table th {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+.table tbody tr:hover {
+    background-color: #e2e6ea;
+}

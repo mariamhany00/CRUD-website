@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+   <link rel="stylesheet" href="CRUD.css">
+</head>
+<body>
+    <div class="form-group">
+   
+    <label for="productName"> product Name :</label>
+    <input class="my-2 form-control" type="text" id="productName" >
+    <small class="text-muted"> productName must be chars only</small>
+</div>
+<div class="form-group">
+   
+    <label for="productPrice"> product Price :</label>
+    <input class="my-2 form-control" type="number" id="productPrice" >
+    <small class="text-muted"> productPrice must be chars only</small>
+</div>
+<div class="form-group">
+   
+    <label for="productCateogary"> product Cateogary :</label>
+    <input class="my-2 form-control" type="text" id="productCateogary" >
+    <small class="text-muted"> productCateogary must be chars only</small>
+</div>
+<div class="form-group">
+   
+    <label for="productDes"> product Description :</label>
+    <textarea class="my-2 form-control" type="text" id="productDes" ></textarea>
+    <small class="text-muted"> product Description must be chars only</small>
+    <br>
+    
+<button id="main-btn" onclick="addProduct()" class=" my-3 btn btn-outline-info">Add product </button>
+<div class="data">
+    <div class="w-75">
+        <label for=" Search"> Search by Product Name</label>
+        <input onkeyup="searchProduct(this.value)" class=" my-2form-control" type="text" name="" id="">
+    </div>
+    </div>
+    <table class="table">
+        <thead>
+           
+            <th> Index</th>
+            <th> Product Name</th>
+            <th> Product Price</th>
+            <th> Category</th>
+            <th> Description</th>
+            <th> Update</th>
+            <th> Delete</th>
+
+        </thead>
+    <tbody id="tablebody">
+       
+    </tbody>
+        
+    </table>
+
+    
+
+</div>
+<link rel="stylesheet" href="/bootstrap/js/bootstrap.min.js">
+    <script src="CRUD.js"></script>
+
+</body>
+</html>
